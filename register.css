@@ -36,7 +36,7 @@ input {
     background-color: #2575fc;
     color: white;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 100px;
 }
 
 .submit-btn:hover {
@@ -81,3 +81,5 @@ input {
     border-radius: 5px;
     display: inline-block;
 }
+
+
