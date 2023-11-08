@@ -100,3 +100,19 @@ input {
     display: block;
     margin-top: 10px;
 }
+body::before {
+    top: 20%;
+    left: 10%;
+    border-radius: 10px;
+    animation: moveSquare 5s infinite alternate;
+}
+
+@keyframes moveSquare {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
