@@ -51,6 +51,7 @@ body::after {
     width: 50px;
     height: 50px;
     background: inherit;
+    animation: moveSquare 11s infinite linear;
 }
 
 body::before {
@@ -65,13 +66,22 @@ body::after {
     border-radius: 5px;
 }
 
+@keyframes moveSquare {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(100vw - 50px));
+    }
+}
+
 input {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 8px;
-    border: #ec6ead;
+    border: 1px solid #ec6ead;
 }
 
 .lgn-btn {
@@ -94,25 +104,10 @@ input {
         opacity: 1;
     }
 }
+
 .link {
     color: #2575fc;
     text-decoration: none;
     display: block;
     margin-top: 10px;
 }
-body::before {
-    top: 20%;
-    left: 10%;
-    border-radius: 10px;
-    animation: moveSquare 5s infinite alternate;
-}
-
-@keyframes moveSquare {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(50px);
-    }
-}
-
