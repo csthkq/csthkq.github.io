@@ -8,7 +8,7 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    animation: gradientAnimation 10s infinite alternate-reverse;
+    #animation: gradientAnimation 10s infinite alternate-reverse;
 }
 
 @keyframes gradientAnimation {
